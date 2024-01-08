@@ -169,7 +169,7 @@ internal class BetterPlayer(
                             try {
                                 val mediaDrm = FrameworkMediaDrm.newInstance(uuid!!)
                                 // Force L3.
-                                mediaDrm.setPropertyString("securityLevel", "L3")
+                                mediaDrm.setPropertyString("securityLevel", "L1")
                                 return@setUuidAndExoMediaDrmProvider mediaDrm
                             } catch (e: UnsupportedDrmException) {
                                 return@setUuidAndExoMediaDrmProvider DummyExoMediaDrm()
